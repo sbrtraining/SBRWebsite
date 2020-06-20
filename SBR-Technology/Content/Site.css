@@ -1,0 +1,105 @@
+﻿body {
+    font-family:Helvetica, sans-serif;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+}
+/*---------------------------------Navigation Design---------------------------------------------------------------------------------------------------------------*/
+.location-btn{
+    margin:10px;
+}
+.ngbg-color {
+    background-color: darkgreen;
+}
+.logo{
+    width:200px;
+    height:110px;
+    margin-left:30px;
+}
+.nav-link {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 4px;
+    font-weight:bold;
+    font-size:20px;
+    margin-left:20px;
+    font-family:Helvetica, sans-serif;
+}
+.nav-link:hover{
+    background-color:darkorange;
+}
+.courses-details {
+    font-family: Helvetica, sans-serif;
+}
+.footer-mainlink {
+    border-bottom: 2px solid white;
+}
+.footer-nav {
+    border-bottom: 1px solid white;
+    font-family:Helvetica, sans-serif;
+}
+.map{
+    width:inherit;
+}
+
+
+
+/*------------------------------------------About us Page--------------------------------------------------------------------------------------------------------*/
+.about-uspage{
+    overflow:hidden;
+}
+.about-usimg{
+    width:100%;
+}
+.welcome-img{
+    width:100%;
+    border-radius:10px;
+}
+.why-img {
+    width: 100%;
+    border-radius: 10px;
+}
+.text-font{
+    font-family:Helvetica, sans-serif;
+}
+.why-text-align{
+    margin-top:15px;
+    font-size:18px;
+}
+.our-team-img{
+    width:100%;
+    border-radius:50%;
+    height:280px;
+}
+
+
+/*-----------------------------------------------Career page css--------------------------------------------------------------------------------------------------------*/
+.career-text{
+    font-size:20px;
+    font-family:Helvetica;
+}
+.opening {
+    font-size: 18px;
+    text-transform: capitalize;
+    font-family: Helvetica;
+}
+
+/*----------------------------------------------Gallery Page-----------------------------------------------------------------------------------------------------------*/
+.gallery-page{
+    margin-top:200px;
+    margin-bottom:200px;
+}

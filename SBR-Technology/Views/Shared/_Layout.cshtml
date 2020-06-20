@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="container">
+        <ul class="nav">
+            <span><img src="~/Image/SBR-logo-02.png" class="logo" /></span>
+            <li class="nav-item ml-auto mt-2">
+                <i class="fa fa-phone fa-2x text-primary ml-3">+91-9346704198</i>
+                <br />
+                <span class="ml-5"><a href="" class="btn btn-warning p-2 ml-2 location-btn">Delhi</a><a class="btn btn-warning location-btn  p-2" href="">Hyderabad</a></span>
+            </li>
+        </ul>
+    </div>
+    <div class="">
+        <nav class="navbar navbar-expand-lg navbar-dark ngbg-color">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse" id="navbarNavAltMarkup">
+                    <ul class="nav navbar-nav ml-5">
+                        <li>@Html.ActionLink("Home", "Index", "Home", new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("About Us", "About", "Home", new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("Courses", "Courses", "Home", new { @class = "nav-link" })</li>
+                        @*<li id="menu-item-courses" class="nav-link ml-5 menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children
+            menu-item-2165 dropdown  drop-hover">
+            <a title="Courses">Courses </a>
+            <span class="dropdown-toggle shapely-dropdown" data-toggle="dropdown">
+            </span>
+            <ul role="menu" class=" dropdown-menu ngbg-color">
+                <li id="menu-item-courses-1" class="p-2 nav-link  menu-item menu-item-type-post_type menu-item-object-page menu-item-1"><a href="~/Views/Home/Courses.cshtml" title="Manual Testing">Manual Testing</a></li>
+                <li id="menu-item-courses-2" class="p-2 nav-link menu-item menu-item-type-post_type menu-item-object-page menu-item-2"><a href="~/Views/Home/Courses.cshtml" title="Selenium">Selenium</a></li>
+                <li id="menu-item-courses-3" class="p-2 nav-link menu-item menu-item-type-post_type menu-item-object-page menu-item-3"><a href="~/Views/Home/Courses.cshtml" title="UI Technology">UI Technology</a></li>
+                <li id="menu-item-courses-4" class="p-2 nav-link menu-item menu-item-type-post_type menu-item-object-page menu-item-4"><a href="~/Views/Home/Courses.cshtml" title="Java">Java</a></li>
+                <li id="menu-item-courses-5" class="p-2 nav-link menu-item menu-item-type-post_type menu-item-object-page menu-item-5"><a href="~/Views/Home/Courses.cshtml" title=".Net" >.NET</a></li>
+                <li id="menu-item-courses-6" class="p-2 nav-link  menu-item menu-item-type-post_type menu-item-object-page menu-item-6"><a href="~/Views/Home/Courses.cshtml" title="SQL Server">SQL Server</a></li>
+            </ul>
+        </li>*@
+                        <li>@Html.ActionLink("Career", "Career", "Home", new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home", new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("Gallery", "Gallery", "Home", new { @class = "nav-link" })</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="">
+        @RenderBody()
+        <hr />
+        <footer class="bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3 class="text-white footer-mainlink">Quick Link</h3>
+                        <div class="footer-nav-link">
+                            <h5 class="footer-nav text-white">Home</h5>
+                            <h5 class="footer-nav text-white">About US</h5>
+                            <h5 class="footer-nav text-white">Career</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 class="text-white footer-mainlink">Contact Us</h3>
+                            <div class="footer-nav-link text-white">
+                                <h6><span>Mobile:+(91)-9346714198</span></h6>
+                                <h6>(+91)9493232942</h6>
+                                <h6>
+                                    Email:sbrtraingandplacement@gmail.com
+                                </h6>
+                            </div>
+                    </div>
+                    <div class="col-md-4 visit-us">
+                        <h3 class="text-white footer-mainlink">Visit Us</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.480418644126!2d77.18972551440454!3d28.52527619567948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1fd36e3a01c1%3A0xae738305a7b2e5d2!2sF130%2C%20Bandalo%20Wala%20Mohalla%2C%20Lado%20Sarai%2C%20New%20Delhi%2C%20Delhi%20110030!5e0!3m2!1sen!2sin!4v1592605734400!5m2!1sen!2sin"
+                          class="map"   frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
